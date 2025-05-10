@@ -61,6 +61,7 @@
     {"id":{"name":"box","path":"scripts/box/box.yy",},},
     {"id":{"name":"menu","path":"scripts/menu/menu.yy",},},
     {"id":{"name":"scriptGrid","path":"scripts/scriptGrid/scriptGrid.yy",},},
+    {"id":{"name":"sBattleBg","path":"sprites/sBattleBg/sBattleBg.yy",},},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},},
     {"id":{"name":"sBricks","path":"sprites/sBricks/sBricks.yy",},},
     {"id":{"name":"sCannon","path":"sprites/sCannon/sCannon.yy",},},

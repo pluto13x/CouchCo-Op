@@ -9,7 +9,10 @@
     "name":"blocks",
     "path":"folders/Objects/Main/blocks.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBlock",
+    "path":"objects/oBlock/oBlock.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sTNT",
+    "path":"sprites/sTNT/sTNT.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
