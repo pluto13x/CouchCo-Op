@@ -3,6 +3,9 @@ isDragging = false;
 isPlaced = false;
 gridRef = instance_find(oGrid, 0); // Reference to grid
 gridCell = -1; // Tracks which cell we're in (-1 = not placed)
+whoPicked = -1;
+placedForever = false;
+foreverCell = undefined;
 
 // Sprite alignment
 spriteHalfWidth = sprite_width / 2;
@@ -14,3 +17,6 @@ cellY = 0;
 
 blockRows = 1;
 blockCols = 1;
+
+placedX = x;
+placedY = y;

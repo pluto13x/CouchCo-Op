@@ -22,7 +22,7 @@ function handleMouseInput()
         isDragging = false;
         depth = 0; // Reset depth
     
-        if (instance_exists(oGrid)) {
+        if (instance_exists(oGrid))  {
             snapToNearestGridCell();
         }
     }
@@ -136,8 +136,9 @@ function snapToNearestGridCell() {
         var lastCellIndex = (lowestValidRow + blockRows - 1) * grid.gridCols + (startCol + blockCols - 1);
         var lastCellPos = grid.gridCenters[lastCellIndex];
         
-        x = (firstCellPos[0] + lastCellPos[0]) / 2;
+        x = (firstCellPos[0] + lastCellPos[0]) / 2; //ne radi ništa?
         y = (firstCellPos[1] + lastCellPos[1]) / 2;
+	    whoPicked = iViewportControl.player;
         
         isPlaced = true;
         gridCell = finalCell;
