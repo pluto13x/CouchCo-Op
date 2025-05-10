@@ -1,5 +1,5 @@
-gridRows = 3;       // Number of rows
-gridCols = 4;       // Number of columns
+gridRows = 4;       // Number of rows
+gridCols = 3;       // Number of columns
 cellWidth = 128;     // Width of each cell
 cellHeight = 128;    // Height of each cell
 gridOffsetX = oSofa.x  - cellWidth * gridCols / 2;    // Optional: X offset for entire grid
