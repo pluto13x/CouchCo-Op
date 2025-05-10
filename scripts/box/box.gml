@@ -62,14 +62,16 @@ function snapToNearestGridCell() {
 		if (closestCell + grid.gridCols < array_length(grid.gridOccupied)) { //ako nije u poslednjem redu
 			show_debug_message("nije u poslednjem redu");
 			var rowsUnderneath = (array_length(grid.gridOccupied)-1 - closestCell) div grid.gridCols;
-			show_debug_message("ispod ima " + string(rowsUnderneath) + " redova");
+			//show_debug_message("ispod ima " + string(rowsUnderneath) + " redova");
 			var found = false;
 			for (var i = 1; i <= rowsUnderneath; i++) {
-				if (grid.gridOccupied[closestCell + grid.gridCols] == true) {
-					finalCell += grid.gridCols * i;
+				//show_debug_message("proveravam " + string(grid.gridOccupied[closestCell + grid.gridCols*i]));
+				if (grid.gridOccupied[closestCell + grid.gridCols * i] == true) {
+					finalCell += grid.gridCols * (i-1);
 					found = true;
 					break;
 				}
+				
 			}
 			if (found == false) {
 				finalCell += grid.gridCols * rowsUnderneath;
