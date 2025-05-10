@@ -7,3 +7,4 @@ else {
 iViewportControl.start = true;
 iViewportControl.sofaPresent = false;
 show_debug_message(iViewportControl.player);
+iViewportControl.changed = false;

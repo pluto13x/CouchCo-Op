@@ -35,5 +35,5 @@
     "path":"sprites/sTNT/sTNT.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

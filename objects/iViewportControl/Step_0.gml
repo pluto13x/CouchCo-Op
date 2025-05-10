@@ -1,4 +1,6 @@
 if start == true {
+	sofa1id = oSofa.id;
+	grid1id = oGrid.id;
 	if player == 1 {
 		x -= 50;
 		if sofaPresent == false {
@@ -13,16 +15,22 @@ if start == true {
 			sofaPresent = true;
 		}
 	}
-	sofa1id = oSofa.id;
-	grid1id = oGrid.id;
 }
 
-if x >= room_width or x <= 0 {
+if x >= room_width or x <= 0 and start == true {
 	start = false;
 	if changed == false {
 		instance_destroy(sofa1id);
 		instance_destroy(grid1id);
-		instance_create_layer(2400, 570, "layerGrid", oGrid);
+		show_debug_message("uništio");
+		if player == 1 {
+			instance_create_layer(480, 570, "layerGrid", oGrid);
+			show_debug_message("player 1");
+		}
+		else {
+			instance_create_layer(2400, 570, "layerGrid", oGrid);
+		}
+		
 		with oBlock {
 			isDragging = false;
 			isPlaced = false;
