@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oNext",
+  "%Name":"oSofa",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oNext",
+  "name":"oSofa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Main",
+    "path":"folders/Objects/Main.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sSofa",
+    "path":"sprites/sSofa/sSofa.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
