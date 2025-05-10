@@ -11,3 +11,6 @@ image_speed = 0; // Freeze animation by default
 
 cellX = 0;
 cellY = 0;
+
+blockRows = 1;
+blockCols = 1;
