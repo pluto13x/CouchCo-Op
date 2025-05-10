@@ -39,6 +39,7 @@ function snapToNearestGridCell() {
     
     var closestDist = infinity;
     var closestCell = -1;
+	var finalCell = -1;
     var grid = oGrid; // Local reference
 
     // Find nearest available cell
@@ -54,20 +55,38 @@ function snapToNearestGridCell() {
 	        }
         }    
     }
+	finalCell = closestCell;
 
     // Snap to cell if found
     if (closestCell != -1) {
-        var targetPos = grid.gridCenters[closestCell];
+		if (closestCell + grid.gridCols < array_length(grid.gridOccupied)) { //ako nije u poslednjem redu
+			show_debug_message("nije u poslednjem redu");
+			var rowsUnderneath = (array_length(grid.gridOccupied)-1 - closestCell) div grid.gridCols;
+			show_debug_message("ispod ima " + string(rowsUnderneath) + " redova");
+			var found = false;
+			for (var i = 1; i <= rowsUnderneath; i++) {
+				if (grid.gridOccupied[closestCell + grid.gridCols] == true) {
+					finalCell += grid.gridCols * i;
+					found = true;
+					break;
+				}
+			}
+			if (found == false) {
+				finalCell += grid.gridCols * rowsUnderneath;
+			}
+		}
+		
+        var targetPos = grid.gridCenters[finalCell];
         x = targetPos[0]; // Move THIS instance, not oBlock
         y = targetPos[1];
         isPlaced = true;
-        gridCell = closestCell;
+        gridCell = finalCell;
     
 	
-        grid.gridOccupied[closestCell] = true;
+        grid.gridOccupied[finalCell] = true;
            
         // Debug output
-        show_debug_message("Snapped to cell "+string(closestCell)+
+        show_debug_message("Snapped to cell "+string(finalCell)+
                          " at "+string(x)+","+string(y));
     } else {
         show_debug_message("No available cell found!");
