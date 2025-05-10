@@ -1,11 +1,23 @@
 if start == true {
-	x += 30;
+	if player == 1 {
+		x -= 50;
+		if sofaPresent == false {
+			instance_create_layer(480, 570, "layerSofa", oSofa);
+			sofaPresent = true;
+		}
+	}
+	else {
+		x += 50;
+		if sofaPresent == false {
+			instance_create_layer(2400, 570, "layerSofa", oSofa);
+			sofaPresent = true;
+		}
+	}
 	sofa1id = oSofa.id;
 	grid1id = oGrid.id;
-	instance_create_layer(2400, 570, "layerSofa", oSofa);
 }
 
-if x >= room_width {
+if x >= room_width or x <= 0 {
 	start = false;
 	if changed == false {
 		instance_destroy(sofa1id);

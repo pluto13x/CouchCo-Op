@@ -1,2 +1,9 @@
+if iViewportControl.player == 1 {
+	iViewportControl.player = 2;
+}
+else {
+	iViewportControl.player = 1;
+}
 iViewportControl.start = true;
-instance_destroy(self);
+iViewportControl.sofaPresent = false;
+show_debug_message(iViewportControl.player);
