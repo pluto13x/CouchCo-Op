@@ -1,0 +1,1 @@
+oGrid.roomDone = true;

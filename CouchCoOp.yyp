@@ -46,6 +46,7 @@
     {"id":{"name":"iIndividualGrids","path":"objects/iIndividualGrids/iIndividualGrids.yy",},},
     {"id":{"name":"iMenuControl","path":"objects/iMenuControl/iMenuControl.yy",},},
     {"id":{"name":"iNext","path":"objects/iNext/iNext.yy",},},
+    {"id":{"name":"iRoomDone","path":"objects/iRoomDone/iRoomDone.yy",},},
     {"id":{"name":"iViewportControl","path":"objects/iViewportControl/iViewportControl.yy",},},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oBox","path":"objects/oBox/oBox.yy",},},
