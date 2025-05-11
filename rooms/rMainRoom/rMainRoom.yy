@@ -15,7 +15,7 @@
     {"name":"inst_5EB9DB98","path":"rooms/rMainRoom/rMainRoom.yy",},
     {"name":"inst_3B87DBBF","path":"rooms/rMainRoom/rMainRoom.yy",},
     {"name":"inst_252819B8","path":"rooms/rMainRoom/rMainRoom.yy",},
-    {"name":"inst_557EED22","path":"rooms/rMainRoom/rMainRoom.yy",},
+    {"name":"inst_2E2DB901","path":"rooms/rMainRoom/rMainRoom.yy",},
     {"name":"inst_B2B7AEE","path":"rooms/rMainRoom/rMainRoom.yy",},
     {"name":"inst_148C4324","path":"rooms/rMainRoom/rMainRoom.yy",},
   ],
@@ -27,7 +27,7 @@
       ],"layers":[],"name":"layerMenu","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"layerButton","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_B2B7AEE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B2B7AEE","objectId":{"name":"oNextPlayer","path":"objects/oNextPlayer/oNextPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":256.0,},
-        {"$GMRInstance":"v2","%Name":"inst_557EED22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_557EED22","objectId":{"name":"iViewportControl","path":"objects/iViewportControl/iViewportControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":864.0,"y":480.0,},
+        {"$GMRInstance":"v2","%Name":"inst_2E2DB901","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E2DB901","objectId":{"name":"iViewportControl","path":"objects/iViewportControl/iViewportControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":544.0,},
       ],"layers":[],"name":"layerButton","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"layerGrid","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_252819B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_252819B8","objectId":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":11.0,"x":480.0,"y":570.0,},
