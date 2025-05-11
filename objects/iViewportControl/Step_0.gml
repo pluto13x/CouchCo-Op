@@ -1,3 +1,5 @@
+oBlock.player = player;
+
 if start == true {
 	sofa1id = oSofa.id;
 	grid1id = oGrid.id;

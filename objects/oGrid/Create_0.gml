@@ -7,6 +7,7 @@ cellHeight = 128;    // Height of each cell
 gridOffsetX = oSofa.x  - cellWidth * gridCols / 2;    // Optional: X offset for entire grid
 gridOffsetY = oSofa.y - cellHeight * gridRows / 2;    // Optional: Y offset for entire grid
 roomDone = false;
+player = 1;
 
 // Initialize grid centers array
 gridCenters = array_create(gridRows * gridCols);
@@ -14,7 +15,7 @@ gridOccupied = array_create(gridRows * gridCols, false);
 
 if roomDone {
 	for (var i = 0; i < array_length(gridOccupied); i++) {
-		if (iIndividualGrids.build[iViewportControl.player][i] <= -1) {
+		if (iIndividualGrids.build[player][i] <= -1) {
 			gridOccupied[i] = false;
 		}
 		else {
@@ -23,7 +24,7 @@ if roomDone {
 	}	
 }
 for (var i = 0; i < array_length(gridOccupied); i++) {
-	if (iIndividualGrids.build[iViewportControl.player][i] <= -1) {
+	if (iIndividualGrids.build[player][i] <= -1) {
 		gridOccupied[i] = false;
 	}
 	else {
