@@ -14,8 +14,11 @@ if (isDragging) {
 if (isPlaced && gridCell != -1 && instance_exists(gridRef)) {
 	placedForever = true;
     var cellCenter = gridRef.gridCenters[gridCell];
-	foreverCell = gridRef.gridCenters[gridCell];
-	iIndividualGrids.build[iViewportControl.player][foreverCell] = object_index.blockIdx;
+	foreverCell = gridCell;
+	iIndividualGrids.build[iViewportControl.player][foreverCell] = blockIdx;
+	if blockCols == 2 {
+		iIndividualGrids.build[iViewportControl.player][foreverCell+1] = blockIdx;
+	}
 	placedX = cellCenter[0];
     placedY = cellCenter[1];
     x = cellCenter[0];
