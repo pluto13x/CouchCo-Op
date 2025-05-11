@@ -1,10 +1,4 @@
 // Mouse interaction
-
-//ovo ne radi
-if blockListDone {
-	show_debug_message(ds_list_find_value(iBlockControl.blockList,blockIdx) + string(blockName))
-}
-
 if !isPlaced {
 	handleMouseInput();
 }
