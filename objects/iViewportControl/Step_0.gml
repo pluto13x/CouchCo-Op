@@ -27,9 +27,11 @@ if x >= room_width or x <= 0 and start == true {
 		show_debug_message("uništio");
 		if player == 1 {
 			instance_create_layer(480, 570, "layerGrid", oGrid);
+			oNextPlayer.switchPlayers = false;
 			show_debug_message("player 1");
 		}
 		else {
+			oNextPlayer.switchPlayers = false;
 			instance_create_layer(2400, 570, "layerGrid", oGrid);
 		}
 		

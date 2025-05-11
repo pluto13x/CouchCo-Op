@@ -141,6 +141,7 @@ function snapToNearestGridCell() {
 	    whoPicked = iViewportControl.player;
         
         isPlaced = true;
+		oNextPlayer.switchPlayers = true;
         gridCell = finalCell;
     
         // Mark all occupied cells
