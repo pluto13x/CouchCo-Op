@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"iViewportControl",
+  "%Name":"iBlockControl",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"iViewportControl",
+  "name":"iBlockControl",
   "overriddenProperties":[],
   "parent":{
     "name":"Main",
     "path":"folders/Objects/Main.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sTNT",
-    "path":"sprites/sTNT/sTNT.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

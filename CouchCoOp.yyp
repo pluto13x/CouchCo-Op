@@ -41,6 +41,9 @@
   "name":"CouchCoOp",
   "resources":[
     {"id":{"name":"fAdamantSansProRegular","path":"fonts/fAdamantSansProRegular/fAdamantSansProRegular.yy",},},
+    {"id":{"name":"iBlockControl","path":"objects/iBlockControl/iBlockControl.yy",},},
+    {"id":{"name":"iBlockListDone","path":"objects/iBlockListDone/iBlockListDone.yy",},},
+    {"id":{"name":"iIndividualGrids","path":"objects/iIndividualGrids/iIndividualGrids.yy",},},
     {"id":{"name":"iMenuControl","path":"objects/iMenuControl/iMenuControl.yy",},},
     {"id":{"name":"iNext","path":"objects/iNext/iNext.yy",},},
     {"id":{"name":"iViewportControl","path":"objects/iViewportControl/iViewportControl.yy",},},

@@ -1,4 +1,10 @@
 // Mouse interaction
+
+//ovo ne radi
+if blockListDone {
+	show_debug_message(ds_list_find_value(iBlockControl.blockList,blockIdx) + string(blockName))
+}
+
 if !isPlaced {
 	handleMouseInput();
 }
@@ -15,6 +21,7 @@ if (isPlaced && gridCell != -1 && instance_exists(gridRef)) {
 	placedForever = true;
     var cellCenter = gridRef.gridCenters[gridCell];
 	foreverCell = gridRef.gridCenters[gridCell];
+	iIndividualGrids.build[iViewportControl.player][foreverCell] = object_index.blockIdx;
 	placedX = cellCenter[0];
     placedY = cellCenter[1];
     x = cellCenter[0];
@@ -25,11 +32,6 @@ if placedForever {
 	x = placedX;
 	y = placedY;
 }
-show_debug_message(object_get_name(object_index));
-show_debug_message("isplaced " + string(isPlaced));
-show_debug_message("gridCell " + string(gridCell));
-show_debug_message("instance exists " + string(instance_exists(gridRef)));
-
 
 
 
